@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bai 6</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body, html {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                font-family: Arial, sans-serif;
+            }
+
+            .container{
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                height: 100vh;
+            }
+            table tr td{
+                padding-bottom: 10px;
+            }
+            .tieuDe{
+                width: 70px;
+                padding-right: 30px;
+            }
+            button {
+                margin-right: 5px;
+                padding: 5px 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form action="#">
+
+                <table>
+                    <tr>
+                        <td class="tieuDe">Username: </td>
+                        <td>
+                            <input type="text" name="Username" id="username">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tieuDe">Password: </td>
+                        <td>
+                            <input type="password" name="Password"
+                                id="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tieuDe">City of Employment: </td>
+                        <td>
+                            <input type="text" name="cityofemp" id="cityofemp">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tieuDe">Webserver: </td>
+                        <td>
+                            <select name="server">
+                                <option value>-- Choose a server --</option>
+                                <option value="server1">Server 1</option>
+                                <option value="server2">Server 2</option>
+                                <option value="server3">Server 3</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="tieuDe">Please specify your role: </td>
+                        <td>
+                            <input type="radio" name="role" value="Admin"
+                                id="admin"> Admin <br>
+                            <input type="radio" name="role" value="Engineer"
+                                id="engineer"> Engineer <br>
+                            <input type="radio" name="role" value="Manager"
+                                id="manager"> Manager <br>
+                            <input type="radio" name="role" value="Guest"
+                                id="guest"> Guest <br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="tieuDe">Single Sign-on eco the following:
+                        </td>
+                        <td>
+                            <input type="checkbox" name="v" id="mail"> Mail <br>
+                            <input type="checkbox" name="v" id="payroll">
+                            Payroll <br>
+                            <input type="checkbox" name="v" id="self-service">
+                            Self-service
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type="submit">Login</button>
+                            <button type="reset">Reset</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>So sánh hai số</title>
+    <script>
+        function kiemTra() {
+            // Lấy giá trị từ input và chuyển sang kiểu số
+            var a = parseFloat(document.getElementById("soA").value);
+            var b = parseFloat(document.getElementById("soB").value);
+
+            var ketQua = "";
+
+            // Kiểm tra a có bằng b không
+            if (a === b) {
+                ketQua += "a bằng b<br>";
+            } else {
+                ketQua += "a không bằng b<br>";
+            }
+
+            // Kiểm tra a có lớn hơn b không
+            if (a > b) {
+                ketQua += "a lớn hơn b<br>";
+            } else if (a < b) {
+                ketQua += "a nhỏ hơn b<br>";
+            } else {
+                ketQua += "a không lớn hơn và cũng không nhỏ hơn b<br>";
+            }
+
+            // Kiểm tra a có khác b không
+            if (a !== b) {
+                ketQua += "a khác b<br>";
+            } else {
+                ketQua += "a không khác b<br>";
+            }
+
+            // Hiển thị kết quả
+            document.getElementById("ketQua").innerHTML = ketQua;
+        }
+    </script>
+</head>
+<body>
+    <h2>So sánh hai số a và b</h2>
+    <label>Nhập số a:</label>
+    <input type="number" id="soA"><br><br>
+
+    <label>Nhập số b:</label>
+    <input type="number" id="soB"><br><br>
+
+    <button onclick="kiemTra()">Kiểm tra</button>
+
+    <h3>Kết quả:</h3>
+    <div id="ketQua"></div>
+</body>
+</html>

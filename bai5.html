@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="chieuDai" placeholder="Chieu Dai">
+    <input type="number" id="chieuRong" placeholder="Chieu Rong">
+    <button onclick="tinhDienTich()">Dien Tich</button>
+    <h3>Dien Tich:</h3>
+    <div id="ketQuaDienTich"></div>
+
+    <button onclick="tinhChuVi()">Chu Vi</button>
+    <h3>Chu Vi: </h3>
+    <div id="ketQuaChuVi"></div>
+    <script>
+        let tinhDienTich = () => {
+            let chieuDai = document.getElementById("chieuDai").value;
+            let chieuRong = document.getElementById("chieuRong").value;
+            console.log(chieuDai);
+            let dienTich = chieuDai * chieuRong;
+            
+            document.getElementById("ketQuaDienTich").innerHTML = dienTich;
+        }
+        
+        let tinhChuVi = () => {
+            let chieuDai = parseFloat(document.getElementById("chieuDai").value);
+            let chieuRong = parseFloat(document.getElementById("chieuRong").value);
+            let chuVi = (chieuDai + chieuRong) / 2;
+            
+            document.getElementById("ketQuaChuVi").innerHTML = chuVi;
+        }
+    </script>
+</body>
+</html>
