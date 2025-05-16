@@ -9,6 +9,8 @@ a có khác b hay không.
 
 Bài 5: Nhập vào chiều dài và chiều rộng. Tính diện tích và chu vi hình chữ nhật.
 
-Bài 6: Tạo web như hình ![image](https://github.com/user-attachments/assets/0fe691bf-04ce-4708-85ca-a778525147c2)
+Bài 6: Tạo web như hình:
+![image](https://github.com/user-attachments/assets/0fe691bf-04ce-4708-85ca-a778525147c2)
 
-Calculate: ![image](https://github.com/user-attachments/assets/5579a54e-b01e-4875-8ceb-c9f2fb199e79)
+Calculate: 
+![image](https://github.com/user-attachments/assets/5579a54e-b01e-4875-8ceb-c9f2fb199e79)
